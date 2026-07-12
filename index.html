@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Discover how nugarone helps UK venues earn passive income with sleek, fully managed vending machines. No cost, no hassle, just revenue." />
-    <title>"nugarone" vending – Passive Income for UK Venues</title>
+    <meta name="description" content="Nugarone installs free perfume vending machines in UK nightclubs, bars and gyms — zero cost, fully managed, and you earn a share of every sale." />
+    <title>Nugarone Vending | Perfume Vending Machines for UK Nightclubs, Bars & Gyms</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Manrope:wght@200..800&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
-<link rel="apple-touch-icon" sizes="180x180" href="favicon_io\apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="favicon_io\favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="favicon_io\favicon-16x16.png">
-<link rel="manifest" href="/site.webmanifest">
+<link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+<link rel="manifest" href="favicon_io/site.webmanifest">
 
     <style>
         * {
@@ -129,8 +129,15 @@ h1 {
             font-size: 1.25rem;
             color: #666;
             max-width: 900px;
-            margin: 0 auto 40px;
+            margin: 0 auto 24px;
             line-height: 1.5;
+        }
+
+        .hero-tag {
+            font-size: 1rem;
+            font-weight: 600;
+            color: #0049ff;
+            margin-bottom: 32px;
         }
 
         .hero-cta {
@@ -276,14 +283,14 @@ h1 {
             font-size: 14px;
         }
 
-        /* Comparison Table */
-        .comparison {
+        /* Machine Showcase */
+        .showcase {
             padding: 100px 40px;
             max-width: 1200px;
             margin: 0 auto;
         }
 
-        .comparison h2 {
+        .showcase h2 {
             font-size: 2.5rem;
             font-weight: 800;
             color: #1a1a1a;
@@ -292,108 +299,91 @@ h1 {
             letter-spacing: -0.02em;
         }
 
-        .comparison-subtitle {
+        .showcase-subtitle {
             text-align: center;
             color: #666;
             font-size: 1.1rem;
             margin-bottom: 60px;
         }
 
-        .comparison-table {
-            background: white;
-            border-radius: 16px;
-            overflow: hidden;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-            border: 1px solid #e9ecef;
-        }
-
-        .table-header {
-            background: #f8f9fa;
+        .showcase-grid {
             display: grid;
-            grid-template-columns: 2fr 1fr 1fr 1fr;
-            padding: 24px;
-            border-bottom: 1px solid #e9ecef;
-            font-weight: 700;
-            color: #1a1a1a;
-        }
-
-        .table-row {
-            display: grid;
-            grid-template-columns: 2fr 1fr 1fr 1fr;
-            padding: 20px 24px;
-            border-bottom: 1px solid #f1f3f4;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
             align-items: center;
         }
 
-        .table-row:last-child {
-            border-bottom: none;
+        .showcase-photo img {
+            width: 100%;
+            height: auto;
+            border-radius: 16px;
         }
 
-        .product-name {
+        .spec-list {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+        }
+
+        .spec-item {
+            padding-bottom: 24px;
+            border-bottom: 1px solid #e9ecef;
+        }
+
+        .spec-item:last-child {
+            border-bottom: none;
+            padding-bottom: 0;
+        }
+
+        .spec-label {
             font-weight: 700;
             color: #1a1a1a;
+            margin-bottom: 6px;
         }
 
-        .product-name.highlight {
-            color: #1a1a1a;
-            position: relative;
-        }
-
-        .product-name.highlight::after {
-            
-            position: absolute;
-            top: -8px;
-            right: -80px;
-            background: #1a1a1a;
-            color: white;
-            padding: 4px 8px;
-            border-radius: 4px;
-            font-size: 10px;
-            font-weight: 500;
-        }
-
-        .feature-status {
+        .spec-value {
             color: #666;
+            font-size: 15px;
         }
 
-        .feature-status.good {
-            color: #22c55e;
-            font-weight: 600;
-        }
-
-        .feature-status.bad {
-            color: #ef4444;
-            font-weight: 600;
-        }
-
-        /* Testimonial */
-        .testimonial {
+        /* FAQ */
+        .faq {
             background: #0049ff;
             color: white;
             padding: 100px 40px;
-            text-align: center;
         }
 
-        .testimonial-container {
+        .faq-container {
             max-width: 800px;
             margin: 0 auto;
         }
 
-        .testimonial-quote {
-            font-size: 1.5rem;
-            line-height: 1.5;
-            margin-bottom: 32px;
-            font-style: italic;
+        .faq h2 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            text-align: center;
+            margin-bottom: 60px;
+            letter-spacing: -0.02em;
         }
 
-        .testimonial-author {
+        .faq-item {
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+            padding: 24px 0;
+        }
+
+        .faq-item:last-child {
+            border-bottom: none;
+        }
+
+        .faq-item h4 {
+            font-size: 1.1rem;
             font-weight: 700;
-            margin-bottom: 4px;
+            margin-bottom: 12px;
         }
 
-        .testimonial-title {
-            color: #b9b8b8;
-            font-style: bold;
+        .faq-item p {
+            color: rgba(255, 255, 255, 0.85);
+            line-height: 1.6;
         }
 
         /* CTA Section */
@@ -475,6 +465,12 @@ h1 {
             box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
         }
 
+        .coverage-note {
+            margin-top: 20px;
+            font-size: 14px;
+            color: #999;
+        }
+
         /* Footer */
         footer {
             background: #000000;
@@ -533,21 +529,16 @@ h1 {
                 padding: 80px 20px;
             }
             
-            .comparison {
+            .showcase {
                 padding: 80px 20px;
             }
-            
-            .table-header,
-            .table-row {
+
+            .showcase-grid {
                 grid-template-columns: 1fr;
-                gap: 12px;
+                gap: 32px;
             }
             
-            .table-header {
-                display: none;
-            }
-            
-            .testimonial {
+            .faq {
                 padding: 80px 20px;
             }
             
@@ -580,11 +571,12 @@ h1 {
 <body>
     <nav>
         <div class="nav-container">
-            <div class="logo"><a href="#top"><img src="images\Logo 1.png" alt="Nugarone Logo" width="110" height="50"/></a></div>
+            <div class="logo"><a href="#top"><img src="images/logo.png" alt="Nugarone Logo" width="110" height="50"/></a></div>
             <ul class="nav-links">
                 <li><a href="#features">Features</a></li>
                 <li><a href="#specs">Specs</a></li>
                 <li><a href="#Profit">Profit Share</a></li>
+                <li><a href="#faq">FAQ</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
             <a href="https://calendly.com/abanjoko-nugaronevending" target="_blank" class="nav-cta">Get Started</a>
@@ -592,11 +584,12 @@ h1 {
     </nav>
 
     <section class="hero" id="top">
-        <div class="hero-badge">✨ Now Available</div>
+        <div class="hero-badge">✨ Now onboarding UK venues</div>
         <h1>Effortless Revenue.</h1>
-        <p>Unlock a new income stream — all without lifting a finger. We install the machine and you get paid. It’s plug-in profit with zero overhead.</p>
-        <a href="#steps" target="_blank" class="hero-cta">
-            Discover More →
+        <p>Nugarone installs a sleek, fully managed perfume vending machine in your venue — at zero cost to you. We handle stocking, maintenance and repairs; you earn a share of every sale.</p>
+        <p class="hero-tag">Perfect for: Nightclubs · Bars · Gyms</p>
+        <a href="https://calendly.com/abanjoko-nugaronevending" target="_blank" class="hero-cta">
+            Book a Free Call →
         </a>
     </section>
 
@@ -605,37 +598,37 @@ h1 {
             <div class="feature-card">
                 <div class="feature-icon">💡</div>
                 <h3>No Cost to You</h3>
-                <p>Installed and managed at zero expense. You get why we call it effortless revenue now?</p>
+                <p>Installed, stocked and maintained at zero cost — you never pay for equipment, install, or upkeep.</p>
             </div>
-            
+
             <div class="feature-card">
                 <div class="feature-icon">💰</div>
                 <h3>Profit Share Model</h3>
-                <p>You earn passive income per sale. Sharing is caring!</p>
+                <p>Earn a share of every sale, paid out automatically — no admin on your end.</p>
             </div>
-            
+
             <div class="feature-card">
                 <div class="feature-icon">🔌</div>
                 <h3>Compact & Sleek Design</h3>
-                <p>Our machines fit neatly in restrooms, salons, or lounges.</p>
+                <p>Space-saving design — fits neatly in restrooms, salons, or lounges, wall or floor mounted.</p>
             </div>
-            
+
             <div class="feature-card">
                 <div class="feature-icon">🛠</div>
                 <h3>24-Hour Repair Guarantee</h3>
-                <p>Fast support and minimal downtime. Less downtime, more profits right?</p>
+                <p>Any fault is fixed within 24 hours, so the machine is rarely out of action.</p>
             </div>
 
             <div class="feature-card">
                 <div class="feature-icon">🧴</div>
                 <h3>Premium Perfume Refills</h3>
-                <p>Rotating selection of top-selling scents. From Tom Ford, Prada, Gucci and more.</p>
+                <p>A rotating selection of top-selling scents, restocked regularly.</p>
             </div>
 
             <div class="feature-card">
                 <div class="feature-icon">🔋</div>
                 <h3>Cashless Payments</h3>
-                <p>Supports contactless/tap via card or phone</p>
+                <p>Supports contactless card, Apple Pay and Google Pay.</p>
             </div>
         </div>
     </section>
@@ -683,100 +676,97 @@ h1 {
         </div>
     </section>
 
-    <section class="comparison" id="specs">
-        <h2>Machine Specifications</h2>
-        <p class="comparison-subtitle">Our machines are compact, secure, and built for high-traffic environments — making them the perfect low-maintenance solution for your venue.</p>
-        
-        <div class="comparison-table">
-            <div class="table-header">
-                <div>Specification Details</div>
-            </div>
-            
-            <div class="table-row">
-                <div class="product-name highlight">Maintainance Access</div>
-                <div class="feature-status">Rear panel access</div>
-                <div class="feature-status">Quick weekly refills</div>
-                <div class="feature-status">No staff needed</div>
-            </div>
-            
-            <div class="table-row">
-                <div class="product-name">Power Requirements</div>
-                <div class="feature-status">Standard UK plug (230V)</div>
-                <div class="feature-status">Low energy usage</div>
-                <div class="feature-status">Plug-and-play setup</div>
-              <!--  <div class="feature-status bad">Restricts customization</div>//-->
-            </div>
-            
-            <div class="table-row">
-                <div class="product-name">Capacity</div>
-                <div class="feature-status">30–50 sprays</div>
-                <div class="feature-status">Compact refill system</div>
-                 <!--  <div class="feature-status bad">No AI assistance</div>//-->
-                <div class="feature-status">1–2 week stock</div>
+    <section class="showcase" id="specs">
+        <h2>See the Machine</h2>
+        <p class="showcase-subtitle">Compact, secure, and built for high-traffic venues — here's what's inside.</p>
+
+        <div class="showcase-grid">
+            <div class="showcase-photo">
+                <img src="images/machine.png" alt="Nugarone perfume vending machine" width="1024" height="1024" loading="lazy" />
             </div>
 
-            <div class="table-row">
-                <div class="product-name">Payment Options</div>
-                <div class="feature-status">Contactless cards</div>
-                <div class="feature-status">Apple/Google Pay</div>
-                <div class="feature-status">Coins Accepted</div>
-            </div>
-
-            <div class="table-row">
-                <div class="product-name">Locking Mechanism</div>
-                <div class="feature-status">Steel-reinforced casing</div>
-                <div class="feature-status">Tamper-proof access</div>
-                <div class="feature-status">Dual lock system</div>
-            </div>
-            <div class="table-row">
-                <div class="product-name highlight">Mounting Options</div>
-                <div class="feature-status">Space-saving design</div>
-                <div class="feature-status">Wall or floor mount</div>
-                <div class="feature-status">Non-invasive install</div>
+            <div class="spec-list">
+                <div class="spec-item">
+                    <div class="spec-label">Maintenance</div>
+                    <div class="spec-value">Rear panel access, quick weekly refills, no staff needed</div>
+                </div>
+                <div class="spec-item">
+                    <div class="spec-label">Power</div>
+                    <div class="spec-value">Standard UK plug (230V), low energy usage, plug-and-play setup</div>
+                </div>
+                <div class="spec-item">
+                    <div class="spec-label">Capacity</div>
+                    <div class="spec-value">30–50 sprays per fill, 1–2 week stock per refill</div>
+                </div>
+                <div class="spec-item">
+                    <div class="spec-label">Payment</div>
+                    <div class="spec-value">Contactless card, Apple Pay / Google Pay, coins accepted</div>
+                </div>
+                <div class="spec-item">
+                    <div class="spec-label">Security</div>
+                    <div class="spec-value">Steel-reinforced casing, tamper-proof dual lock system</div>
+                </div>
+                <div class="spec-item">
+                    <div class="spec-label">Mounting</div>
+                    <div class="spec-value">Wall or floor mount, non-invasive install</div>
+                </div>
             </div>
         </div>
-    </br>
+    </section>
 
-<div style="text-align: center;">
-    <img src="images\S71f0a7f7c0ee46ee8d21d1ef53cffe60A.jpg_720x720q75.jpg_.png" alt="Centered Image" width="490" height="320" >
+    <section class="faq" id="faq">
+        <div class="faq-container">
+            <h2>Common Questions</h2>
 
-</div>
-  </section>
+            <div class="faq-item">
+                <h4>Will it disrupt my staff or take up their time?</h4>
+                <p>No. We handle delivery, install, stocking, and repairs ourselves. Your team doesn't need to do anything — refills and maintenance happen without any input from your staff.</p>
+            </div>
 
-    <section class="testimonial">
-        <div class="testimonial-container">
-            <p class="testimonial-quote">"I was hesitant at first, but having the Nugarone vending machine in our venue has been a game-changer. It takes up barely any space, requires no effort from our team, and generates extra income week after week. The entire process was smooth, and the guests love it."</p>
-            <div class="testimonial-author">Sarah Thompson</div>
-            <div class="testimonial-title">Venue Manager, The Avenue Bar</div>
+            <div class="faq-item">
+                <h4>What if it doesn't sell?</h4>
+                <p>There's no cost or commitment either way — you only earn when it sells, and you're never charged for machine time that doesn't convert. If a venue isn't the right fit, we'll say so upfront.</p>
+            </div>
+
+            <div class="faq-item">
+                <h4>Who owns the stock and machine?</h4>
+                <p>Nugarone owns and stocks the machine. You're simply hosting it and earning a share of the revenue it generates — no purchase, no inventory risk on your side.</p>
+            </div>
+
+            <div class="faq-item">
+                <h4>Can we cancel?</h4>
+                <p>Yes. There's no long-term contract — if it's not working for your venue, we'll remove the machine at no cost to you.</p>
+            </div>
         </div>
     </section>
 
     <section class="cta-section" id="Profit">
         <div class="cta-container">
             <h2>Our Profit Share Model</h2>
-            <p>Schedule a quick call to learn how you can earn passive income with zero hassle, cost, or commitment.</p>
-            
+            <p>Book a free call to see exactly how much you could earn — no cost, no commitment.</p>
+
             <div class="steps">
                 <div class="step">
                     <div class="step-number">01</div>
                     <h4>We Handle the Sales</h4>
                     <p>Customers use the machine — we track every purchase digitally in real time.</p>
                 </div>
-                
+
                 <div class="step">
                     <div class="step-number">02</div>
                     <h4>You Earn Automatically</h4>
                     <p>You receive a percentage of every sale, paid out monthly — no admin, no effort.</p>
                 </div>
-                
+
                 <div class="step">
                     <div class="step-number">03</div>
                     <h4>Transparent Reporting</h4>
                     <p>You get a clear monthly report showing sales and your earnings, so you’re always in the loop.</p>
                 </div>
             </div>
-            
-            <a href="mailto:abanjoko@nugaronevending.co.uk?subject=Interested%20in%20Hosting%20a%20Vending%20Machine" class="final-cta">Connect with us</a>
+
+            <a href="https://calendly.com/abanjoko-nugaronevending" target="_blank" class="final-cta">Book a Free Call</a>
+            <p class="coverage-note">Currently onboarding venues UK-wide.</p>
         </div>
     </section>
 
@@ -785,12 +775,11 @@ h1 {
             <div class="footer-links">
                 <a href="mailto:abanjoko@nugaronevending.co.uk?subject=Interested%20in%20Hosting%20a%20Vending%20Machine" target="_blank" >abanjoko@nugaronevending.co.uk</a>
                 <a href="tel:+447442862198" target="_blank" >+44 7442 862198</a>
-                <a href="privacy policy.html" target="_blank" >Privacy Policy</a>
+                <a href="privacy-policy.html" target="_blank" >Privacy Policy</a>
             </div>
             <div class="footer-bottom">
                 © 2025 "nugarone". All rights reserved.
             </div>
-
         </div>
     </footer>
 
